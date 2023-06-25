@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-inlp2)+z=%h_zc(dj1(2j6b%)d52etug8!5xphes7y4d)30ih5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
 
     'todo',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,5 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'user.UserModel'
